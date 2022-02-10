@@ -1,0 +1,188 @@
+body, html{
+	height: 100%;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h2{
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+p{
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 500;
+	font-size: 22px;
+}
+/* //////// Header //////// */
+
+header{
+	background: url('../img/splash.jpg') no-repeat center;
+	height: 100%;
+	background-size: cover;	
+}
+header div{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+header img{
+	display: block;
+	margin-bottom: 80px;
+}
+header a{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px 25px;
+	border: 2px solid #fff;
+	-webkit-transition: .3s all ease-in-out;
+	-moz-transition: .3s all ease-in-out;
+	transition: .3s all ease-in-out;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+
+}
+header a:hover{
+	background:rgba(0,0,0,0.5);
+	padding: 10px 35px;
+	border-radius: 3px;
+}
+header::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(0,0,0,0.2);
+}
+/*nav*/
+nav{
+	padding:25px 0;
+	text-align: center;
+	border-bottom: 2px solid #303030;
+}
+nav a{
+	display: inline-block;
+	margin:0 20px;
+	text-decoration: none;
+	color: #303030;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	vertical-align: middle;
+	position: relative;
+}
+nav a:hover::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	bottom: -7px;
+	left: 0;
+	border-bottom: 2px dotted black;
+}
+.logo:hover::after{
+	border-bottom: none;
+}
+.center{
+	text-align: center;
+	width: 940px;
+	margin: 0 auto;
+}
+/*///////////
+feat-products
+///////////*/
+.feat-products h1{
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 23px;
+	font-weight: normal;
+}
+.feat-products div:first-child{
+	margin: 60px 0;
+}
+.feat-products div:first-child p{
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 18px;
+}	
+.product{
+	display: inline-block;
+	width: 33%;
+	padding:0 10px;
+	vertical-align: top;
+}
+.product img{
+	width: 100%;	
+}
+.product h3{
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 700;
+	font-size: 25px;
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+.product p{
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 500;
+	font-size: 18px;
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+.shop-all{
+	background: url('../img/bar-promo.jpg') no-repeat;
+	width: 100%;
+	height: 63px;
+	position: relative;
+}
+.shop-all p,h2{
+	display: inline-block; 
+}
+.shop-all p{
+	position: absolute;
+	left:0;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 500;
+	font-size: 22px;
+	
+}
+.shop-all h2{
+	float: right;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 22px; 
+}
+.shop-all h2::after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 100%
+}
+/*///////////
+Story
+///////////*/
+.story{
+	padding: 80px 100px 0;
+}
+.slider{
+	background: url('../img/image-04.jpg') no-repeat;
+	height: 565px;
+	position: relative;
+	margin: 30px 0 40px;
+}
+.slider img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
